@@ -8,5 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class Item extends Model
 {
     use HasFactory;
+    // public function user(){
+    //     return $this->hasMany('App\Models\User');
+    // }
 
+    protected $fillable = [
+        'name',
+        'description',
+        'price',
+    ];
 }
